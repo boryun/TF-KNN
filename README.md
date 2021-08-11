@@ -1,4 +1,4 @@
-# TF_KNN
+# TF-KNN
 
 This repository contains TensorFlow KNN Ops based on CPU(KDTree) and GPU(CUDA) respectively. CUDA version is a modification of [KNN-CUDA](https://github.com/vincentfpgarcia/kNN-CUDA), KDTree version is based on [nanoflann](https://github.com/jlblancoc/nanoflann). 
 
@@ -10,10 +10,11 @@ Notes:
 
 # Usage
 
-Both version has the same way to build Op (yet for GPU version you may need to change the `CUDA_HOME` in `compile.sh` first):
-1. run `compile.sh` in CUDA or KDTree folder.
-2. import the knn_grouping function in `knn_grouping.py`.
-3. use `tf.gather` with `batch_dims=1' to gather the NN via returned indices.
+Both version has the same way to build the Op (yet for GPU version you may need to change the `CUDA_HOME` in `compile.sh` first):
+1. activate your anaconda env with TensorFlow installed.
+2. run `compile.sh` in CUDA or KDTree folder.
+3. import the `knn_grouping` function in `knn_grouping.py`.
+4. use `tf.gather` with `batch_dims=1' to gather the NN via returned indices.
 
 # Time Consumption (in python)
 
