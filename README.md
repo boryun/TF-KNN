@@ -39,28 +39,28 @@ Denote B,N,M,K for batch_size, reference_points, query_points and num_neighbours
 
 | | Pure TF | CUDA | KDTree | KDTree(OpenMP) |
 |:-:|:-:|:-:|:-:|:-:|
-|time(ms)|0.035|0.202|0.025|0.006|
+|time(s)|0.035|0.202|0.025|0.006|
 
 **At**&nbsp;&nbsp;B=8, N=8192, M=512, K=64
 
 | | Pure TF | CUDA | KDTree | KDTree(OpenMP) |
 |:-:|:-:|:-:|:-:|:-:|
-|time(ms)|0.053|0.559|0.037|0.009|
+|time(s)|0.053|0.559|0.037|0.009|
 
 **At**&nbsp;&nbsp;B=8, N=32768, M=2048, K=16
 
 | | Pure TF | CUDA | KDTree | KDTree(OpenMP) |
 |:-:|:-:|:-:|:-:|:-:|
-|time(ms)|OOM|0.371|0.084|0.017|
+|time(s)|OOM|0.371|0.084|0.017|
 
 **At**&nbsp;&nbsp;B=8, N=32768, M=2048, K=32
 
 | | Pure TF | CUDA | KDTree | KDTree(OpenMP) |
 |:-:|:-:|:-:|:-:|:-:|
-|time(ms)|OOM|0.506|0.112|0.024|
+|time(s)|OOM|0.506|0.112|0.024|
 
 **At**&nbsp;&nbsp;B=8, N=32768, M=2048, K=64
 
 | | Pure TF | CUDA | KDTree | KDTree(OpenMP) |
 |:-:|:-:|:-:|:-:|:-:|
-|time(ms)|OOM|1.085|0.168|0.035|
+|time(s)|OOM|1.085|0.168|0.035|
